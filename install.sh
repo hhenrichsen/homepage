@@ -1,1 +1,1 @@
-git clone
+git -C /var/www/html pull
