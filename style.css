@@ -1,0 +1,67 @@
+html {
+    font-size: 16px;
+    background-color: #E5E9F0;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+body {
+    --chart-width: 100%;
+    --chart-height: calc(--chart-width * 1.777777);
+    width: var(--body-width);
+    margin: auto;
+    color: #3B4252;
+    background-color: #ECEFF4;
+    font-family: sans-serif;
+    padding: 2em;
+    border-radius: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        --body-width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        --body-width: 768px;
+    }
+}
+
+.chart {
+    margin: auto;
+    height: calc(var(--chart-height) - calc(2 * 2em));
+    width: calc(var(--chart-width) - calc(2 * 2em));
+}
+
+h1 {
+    margin-top: 0px;
+    font-size: 2.5em;
+    padding-top: 0.5em;
+    color: #2E3440;
+}
+
+h2 {
+    font-size: 2em;
+    padding-top: 0.25em;
+    color: #2E3440;
+}
+
+h3 {
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    color: #2E3440;
+}
+
+.small {
+    font-size: 0.75em;
+}
+
+.centered {
+    text-align: center;
+}
